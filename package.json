@@ -1,0 +1,9 @@
+{
+  "name": "sombra-do-arcanum",
+  "private": true,
+  "version": "9.0.0",
+  "type": "module",
+  "description": "Grimório digital de fichas de RPG com senha",
+  "scripts": {"start": "node server.mjs"},
+  "engines": {"node": ">=20"}
+}

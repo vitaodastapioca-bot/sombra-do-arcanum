@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: sombra-do-arcanum
+    runtime: node
+    plan: starter
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: DATABASE_FILE
+        value: /var/data/fichas.json
+    disk:
+      name: personagens
+      mountPath: /var/data
+      sizeGB: 1
